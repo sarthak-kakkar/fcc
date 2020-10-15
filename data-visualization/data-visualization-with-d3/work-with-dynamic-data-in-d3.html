@@ -1,0 +1,18 @@
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    d3.select("body").selectAll("h2")
+      .data(dataset)
+      .enter()
+      .append("h2")
+      // Add your code below this line
+      .text(data=>data+" USD");
+      // Add your code above this line
+  </script>
+</body>
+
+<!--
+  The last two challenges cover the basics of displaying data dynamically with D3 using the data() and enter() methods.
+  These methods take a data set and, together with the append() method, create a new DOM element for each entry in the data set.
+-->
