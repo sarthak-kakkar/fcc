@@ -1,0 +1,33 @@
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    const w = 500;
+    const h = 100;
+
+    const svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h)
+                  // Add your code below this line
+                  .append("rect")
+                  .attr("width", 25)
+                  .attr("height", 100)
+                  .attr("x", 0)
+                  .attr("y", 0)
+                  // Add your code above this line
+  </script>
+</body>
+
+<!--
+  The last challenge created an svg element with a given width and height, which was visible because it had a background-color applied to it in the style tag. 
+  The code made space for the given width and height.
+
+The next step is to create a shape to put in the svg area. 
+There are a number of supported shapes in SVG, such as rectangles and circles. 
+They are used to display data. For example, a rectangle (<rect>) SVG shape could create a bar in a bar chart.
+
+When you place a shape into the svg area, you can specify where it goes with x and y coordinates. 
+The origin point of (0, 0) is in the upper-left corner. 
+Positive values for x push the shape to the right, and positive values for y push the shape down from the origin point.
+-->
